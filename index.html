@@ -1,0 +1,25 @@
+<<html>
+
+    <<head>
+        <title>Form - Data - XMLHttpRequest</title>
+    </head>
+
+    <body>
+        <h2 id="title">Form Data - XMLHttpRequest - dcode</h2>
+    </body>
+
+    <script>
+        const data = new FormData();
+        data.append("name","diogo");
+        data.append("age",34);
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'bottle.php',true);
+        xhr.send(data);
+
+        
+        
+
+    </script>
+
+</html>
